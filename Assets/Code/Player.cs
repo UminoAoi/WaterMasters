@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
 
     Rigidbody2D rb;
     bool onGround = false;
-    bool isRight = true;
+    static bool isRight = true;
     Gun gun;
 
     void Start()
@@ -56,5 +56,10 @@ public class Player : MonoBehaviour
 
         if (collision.gameObject.layer == 8)
             Die();
+    }
+
+    public static bool GetDirection()
+    {
+        return isRight;
     }
 }

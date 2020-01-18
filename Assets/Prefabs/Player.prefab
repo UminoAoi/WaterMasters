@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1817555470}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 6286841256855559190}
   - component: {fileID: 3721797473232750792}
   - component: {fileID: 3721797473232750793}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -140,9 +140,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90be38ad22f779e478c669a901befa0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  iceLaser: {fileID: 0}
-  waterLaser: {fileID: 0}
-  steamLaser: {fileID: 0}
+  iceLaser: {fileID: 6129146216381976554, guid: 4554219b35bb43840816008b75bbb4b5,
+    type: 3}
+  waterLaser: {fileID: 6129146216381976554, guid: 4554219b35bb43840816008b75bbb4b5,
+    type: 3}
+  steamLaser: {fileID: 6129146216381976554, guid: 4554219b35bb43840816008b75bbb4b5,
+    type: 3}
+  gunStateText: {fileID: 0}
 --- !u!50 &3721797473232750792
 Rigidbody2D:
   serializedVersion: 4
