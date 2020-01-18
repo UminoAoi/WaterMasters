@@ -32,6 +32,16 @@ public class Player : MonoBehaviour
             rb.AddForce(new Vector2(rb.velocity.x, jumpSpeed));
         }
         float move = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
+        if (move < 0 && isRight)
+        {
+            isRight = false;
+            transform.localScale = new Vector2(-transform.localScale.x, transform.localScale.y);
+        }
+        else if (move > 0 && !isRight)
+        {
+            isRight = true;
+            transform.localScale = new Vector2(-transform.localScale.x, transform.localScale.y);
+        }
         rb.velocity = new Vector2(move, rb.velocity.y);
     }
 

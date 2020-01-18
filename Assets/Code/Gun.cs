@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Gun : MonoBehaviour
 {
@@ -9,16 +10,26 @@ public class Gun : MonoBehaviour
     public GameObject steamLaser;
 
     WaterState gunMode = WaterState.Frozen;
+    public TextMeshProUGUI gunStateText;
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown("1"))
+        {
+            gunStateText.text = "Ice";
             gunMode = WaterState.Frozen;
+        }
         if (Input.GetKeyDown("2"))
+        {
+            gunStateText.text = "Liquid";
             gunMode = WaterState.Liquid;
+        }
         if (Input.GetKeyDown("3"))
+        {
+            gunStateText.text = "Steam";
             gunMode = WaterState.Steam;
+        }
     }
 
     public void Shoot()
