@@ -16,3 +16,10 @@ public class GameState : MonoBehaviour
         
     }
 }
+
+public enum WaterState
+{
+    Frozen,
+    Liquid,
+    Steam
+}
