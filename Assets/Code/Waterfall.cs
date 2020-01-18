@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Waterfall : MonoBehaviour
 {
+    public WaterState state;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +16,8 @@ public class Waterfall : MonoBehaviour
     void Update()
     {
         
+    }
+    void ChangeState(WaterState newState) {
+        state = newState;
     }
 }
