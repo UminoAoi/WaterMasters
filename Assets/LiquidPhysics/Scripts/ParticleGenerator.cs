@@ -1,15 +1,5 @@
 using UnityEngine;
 using System.Collections;
-/// <summary
-/// Particle generator.
-/// 
-/// The particle generator simply spawns particles with custom values. 
-/// See the Dynamic particle script to know how each particle works..
-/// 
-/// Visit: www.codeartist.mx for more stuff. Thanks for checking out this example.
-/// Credit: Rodrigo Fernandez Diaz
-/// Contact: q_layer@hotmail.com
-/// </summary>
 
 public class ParticleGenerator : MonoBehaviour {		
 	float SPAWN_INTERVAL=0.025f; // How much time until the next particle spawns
@@ -29,7 +19,8 @@ public class ParticleGenerator : MonoBehaviour {
 			particleScript.SetLifeTime(PARTICLE_LIFETIME); //Set each particle lifetime
 			particleScript.SetState(particlesState); //Set the particle State
 			newLiquidParticle.transform.position=transform.position;// Relocate to the spawner position
-			newLiquidParticle.transform.parent=particlesParent;// Add the particle to the parent container			
+            newLiquidParticle.transform.parent=particlesParent;// Add the particle to the parent container			
+
 			lastSpawnTime=Time.time; // Register the last spawnTime			
 		}		
 	}

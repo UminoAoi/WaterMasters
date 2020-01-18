@@ -1,18 +1,9 @@
 using UnityEngine;
 using System.Collections;
-/// <summary>
-/// Dynamic particle.
-/// 
-/// The dynamic particle is the backbone of the liquids effect. Its a circle with physics with 3 states, each state change its physic properties and its sprite color ( so the shader can separate wich particle is it to draw)
-/// The particles scale down and die, and have a scale  effect towards their velocity.
-/// 
-/// Visit: www.codeartist.mx for more stuff. Thanks for checking out this example.
-/// Credit: Rodrigo Fernandez Diaz
-/// Contact: q_layer@hotmail.com
-/// </summary>
 
 public class DynamicParticle : MonoBehaviour {	
-	public enum STATES{WATER,GAS,LAVA,NONE}; //The 3 states of the particle
+	public enum STATES{WATER,GAS,ICE,NONE}; //The 3 states of the particle
+
 	STATES currentState=STATES.NONE; //Defines the currentstate of the particle, default is water
 	public GameObject currentImage; //The image is for the metaball shader for the effect, it is onle seen by the liquids camera.
 	public GameObject[] particleImages; //We need multiple particle images to reduce drawcalls
@@ -34,12 +25,12 @@ public class DynamicParticle : MonoBehaviour {
 				case STATES.GAS:		
 					particleLifeTime=particleLifeTime/2.0f;	// Gas lives the time the other particles
 					GetComponent<Rigidbody2D>().gravityScale=0.0f;// To simulate Gas density
-					gameObject.layer=LayerMask.NameToLayer("Gas");// To have a different collision layer than the other particles (so gas doesnt rises up the lava but still collides with the wolrd)
-				break;					
-				case STATES.LAVA:
-					GetComponent<Rigidbody2D>().gravityScale=0.3f; // To simulate the lava density
-				break;	
-				case STATES.NONE:
+					
+				break;
+                case STATES.ICE:
+                    GetComponent<Rigidbody2D>().gravityScale = 0.7f; 
+                    break;
+                case STATES.NONE:
 					Destroy(gameObject);
 				break;
 			}
@@ -59,11 +50,12 @@ public class DynamicParticle : MonoBehaviour {
 				MovementAnimation(); 
 				ScaleDown();
 			break;
-			case STATES.LAVA:
-				MovementAnimation();
-				ScaleDown();
-			break;
-			case STATES.GAS:
+            case STATES.ICE:
+                MovementAnimation();
+                ScaleDown();
+                break;
+            case STATES.GAS:
+
 				if(GetComponent<Rigidbody2D>().velocity.y<50){ //Limits the speed in Y to avoid reaching mach 7 in speed
 					GetComponent<Rigidbody2D>().AddForce (new Vector2(0,GAS_FLOATABILITY)); // Gas always goes upwards
 				}
@@ -97,12 +89,12 @@ public class DynamicParticle : MonoBehaviour {
 	public void SetLifeTime(float time){
 		particleLifeTime=time;	
 	}
-	// Here we handle the collision events with another particles, in this example water+lava= water-> gas
+
+	
 	void OnCollisionEnter2D(Collision2D other){
 		if(currentState==STATES.WATER && other.gameObject.tag=="DynamicParticle"){ 
-			if(other.collider.GetComponent<DynamicParticle>().currentState==STATES.LAVA){
-				SetState(STATES.GAS);
-			}
+			
+
 		}
 
 	}
