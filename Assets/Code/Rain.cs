@@ -18,8 +18,9 @@ public class Rain : MonoBehaviour
 
     }
 
-    void ChangeState()
+    void ChangeState(WaterState newState)
     {
-
+        Debug.Log("Old state: " + state + ", new state: " + newState);
+        state = newState;
     }
 }

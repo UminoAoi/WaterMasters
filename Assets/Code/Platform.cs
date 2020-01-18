@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Platform : MonoBehaviour
 {
+    public WaterState state;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +16,11 @@ public class Platform : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void ChangeState(WaterState newState)
+    {
+        Debug.Log("Old state: " + state + ", new state: " + newState);
+        state = newState;
     }
 }

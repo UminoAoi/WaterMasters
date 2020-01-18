@@ -17,7 +17,9 @@ public class Waterfall : MonoBehaviour
     {
         
     }
-    void ChangeState(WaterState newState) {
+    void ChangeState(WaterState newState)
+    {
+        Debug.Log("Old state: " + state + ", new state: " + newState);
         state = newState;
     }
 }
