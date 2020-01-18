@@ -9,19 +9,21 @@ public class Player : MonoBehaviour
     public float jumpSpeed = 200;
 
     Rigidbody2D rb;
-    bool onGround;
+    bool onGround = false;
+    bool isRight = true;
+    Gun gun;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        onGround = false;
+        gun = GetComponent<Gun>();
     }
     
     void Update()
     {
         if (Input.GetKeyDown("space"))
         {
-            Shoot();
+            gun.Shoot();
         }
 
         if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) && onGround)
@@ -31,11 +33,6 @@ public class Player : MonoBehaviour
         }
         float move = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
         rb.velocity = new Vector2(move, rb.velocity.y);
-    }
-
-    void Shoot()
-    {
-
     }
 
     void Die()
