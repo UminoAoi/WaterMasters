@@ -21,6 +21,11 @@ public class Player : MonoBehaviour
     
     void Update()
     {
+        if (Input.GetKeyDown("r"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+
         if (Input.GetKeyDown("space"))
         {
             gun.Shoot();
@@ -61,5 +66,10 @@ public class Player : MonoBehaviour
     public static bool GetDirection()
     {
         return isRight;
+    }
+
+    private void OnBecameInvisible()
+    {
+        Die();
     }
 }
