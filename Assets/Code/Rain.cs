@@ -9,7 +9,7 @@ public class Rain : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        state = WaterState.Liquid;
     }
 
     // Update is called once per frame
@@ -18,8 +18,9 @@ public class Rain : MonoBehaviour
 
     }
 
-    void ChangeState()
+    void ChangeState(WaterState newState)
     {
-
+        Debug.Log("Old state: " + state + ", new state: " + newState);
+        state = newState;
     }
 }
