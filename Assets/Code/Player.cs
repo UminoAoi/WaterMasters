@@ -52,7 +52,7 @@ public class Player : MonoBehaviour
 
     void Die()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -60,7 +60,9 @@ public class Player : MonoBehaviour
         onGround = true;
 
         if (collision.gameObject.layer == 8)
+        {
             Die();
+        }
     }
 
     public static bool GetDirection()

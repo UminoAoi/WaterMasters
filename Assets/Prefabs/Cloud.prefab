@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2825363175838971662}
   - component: {fileID: 2825363175838971697}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: New Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65,8 +65,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1177274615
-  m_SortingLayer: 0
+  m_SortingLayerID: 665200433
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: aad22537d185b64418ea15197cd3d3a6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -90,7 +90,8 @@ GameObject:
   - component: {fileID: 2825363175849939174}
   - component: {fileID: 7254554035779735356}
   - component: {fileID: 7889313429456905858}
-  m_Layer: 0
+  - component: {fileID: 674971500}
+  m_Layer: 12
   m_Name: Cloud
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,3 +143,29 @@ MonoBehaviour:
   particleForce: {x: 0, y: 0, z: 0}
   particlesState: 0
   particlesParent: {fileID: 0}
+--- !u!61 &674971500
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2825363175849939175}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.012557507, y: -0.012551904}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.4404364, y: 0.8744838}
+  m_EdgeRadius: 0

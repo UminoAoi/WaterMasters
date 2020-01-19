@@ -9,7 +9,7 @@ public class Gun : MonoBehaviour
     public GameObject waterLaser;
     public GameObject steamLaser;
 
-    WaterState gunMode = WaterState.Frozen;
+    static WaterState gunMode = WaterState.Frozen;
     public TextMeshProUGUI gunStateText;
 
     // Update is called once per frame
@@ -50,5 +50,9 @@ public class Gun : MonoBehaviour
 
         laser.transform.position = gameObject.transform.position;
         Instantiate(laser);
+    }
+
+    public static WaterState GetWaterState() {
+        return gunMode;
     }
 }

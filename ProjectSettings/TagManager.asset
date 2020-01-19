@@ -7,6 +7,7 @@ TagManager:
   - Ice
   - Water
   - Steam
+  - DynamicParticle
   layers:
   - Default
   - TransparentFX
@@ -20,12 +21,12 @@ TagManager:
   - Laser
   - Player
   - 
+  - Cloud
+  - Platform
+  - Waterfall
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - SteamRain
+  - Ice
   - 
   - 
   - 

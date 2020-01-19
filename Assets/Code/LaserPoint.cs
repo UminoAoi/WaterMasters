@@ -22,6 +22,20 @@ public class LaserPoint : MonoBehaviour
 private void OnCollisionEnter2D(Collision2D collision)
     {
         laser.StartShink();
+
+        switch (collision.collider.gameObject.layer) {
+            case 12: //Cloud
+                Rain rain = collision.collider.gameObject.GetComponent<Rain>();           
+                WaterState state = Gun.GetWaterState();
+                rain.ChangeState(state);
+                break;
+            case 13: //Platform
+                Platform platform = collision.collider.gameObject.GetComponent<Platform>();
+                break;
+            case 14: //waterfall
+                Waterfall Waterfall = collision.collider.gameObject.GetComponent<Waterfall>();
+                break;
+        }
         Destroy(gameObject);
     }
 
