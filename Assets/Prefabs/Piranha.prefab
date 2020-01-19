@@ -4831,6 +4831,7 @@ GameObject:
   - component: {fileID: 5851929851553462374}
   - component: {fileID: 5851929851553462372}
   - component: {fileID: 5851929851553462373}
+  - component: {fileID: 1089872286012492047}
   m_Layer: 8
   m_Name: Piranha
   m_TagString: Untagged
@@ -4890,8 +4891,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 23c3088308414fc4c86e78190a92a9ef, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.5176471}
+  m_Sprite: {fileID: 21300000, guid: a415e2e404d872242beb9e50c7389a18, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5176471}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4931,9 +4932,28 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.48155594}
+  m_Offset: {x: 0, y: 0.043427467}
   serializedVersion: 2
-  m_Radius: 0.98155594
+  m_Radius: 1.0353608
+--- !u!95 &1089872286012492047
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5851929851553462369}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2e1c60bbcc4cb3f47b7dbe2d22171317, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5851929851682443991
 GameObject:
   m_ObjectHideFlags: 0
