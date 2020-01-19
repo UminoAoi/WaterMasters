@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8382155951479112101}
   m_Layer: 9
   m_Name: Laser
-  m_TagString: Ice
+  m_TagString: Steam
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 7496360564981991657}
   m_Layer: 9
   m_Name: Point
-  m_TagString: Untagged
+  m_TagString: Steam
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -255,7 +255,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5078635908391408124}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.781575, y: 2.9249995, z: 0}
+  m_LocalPosition: {x: 2.6594203, y: -0.17400005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6241883827713509024}
