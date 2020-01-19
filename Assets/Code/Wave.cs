@@ -32,7 +32,7 @@ public class Wave : MonoBehaviour
             current = next;
             next = tmp;
         }
-
+        
         Vector2 target = new Vector2(current.position.x, transform.position.y + speed * 2);
         transform.position = Vector2.MoveTowards(transform.position, target, waveSpeed * Time.deltaTime);
         speed = actualSpeed;

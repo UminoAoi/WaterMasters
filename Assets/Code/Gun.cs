@@ -21,17 +21,17 @@ public class Gun : MonoBehaviour
     {
         if (Input.GetKeyDown("1"))
         {
-            gunStateText.text = "Ice";
+            gunStateText.text = "(1)Ice";
             gunMode = WaterState.Frozen;
         }
         if (Input.GetKeyDown("2"))
         {
-            gunStateText.text = "Liquid";
+            gunStateText.text = "(2)Liquid";
             gunMode = WaterState.Liquid;
         }
         if (Input.GetKeyDown("3"))
         {
-            gunStateText.text = "Steam";
+            gunStateText.text = "(3)Steam";
             gunMode = WaterState.Steam;
         }
     }
