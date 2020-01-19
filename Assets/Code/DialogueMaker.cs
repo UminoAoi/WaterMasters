@@ -16,5 +16,6 @@ public class DialogueMaker : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         dialogue.ShowNextDialogue(text);
+        gameObject.SetActive(false);
     }
 }

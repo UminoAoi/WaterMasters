@@ -6180,6 +6180,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8262147434420958649, guid: 529234ddbc49a514abdebba43648982f,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8262147434420958649, guid: 529234ddbc49a514abdebba43648982f,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8262147434420958649, guid: 529234ddbc49a514abdebba43648982f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8262147434420958649, guid: 529234ddbc49a514abdebba43648982f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8262147434615933800, guid: 529234ddbc49a514abdebba43648982f,
         type: 3}
       propertyPath: m_Camera
