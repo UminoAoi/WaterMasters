@@ -13,10 +13,13 @@ public class Player : MonoBehaviour
     static bool isRight = true;
     Gun gun;
 
+    Animator animator;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         gun = GetComponent<Gun>();
+        animator = GetComponent<Animator>();
     }
     
     void Update()
@@ -47,6 +50,7 @@ public class Player : MonoBehaviour
             isRight = true;
             transform.localScale = new Vector2(-transform.localScale.x, transform.localScale.y);
         }
+        animator.SetFloat("speed", Mathf.Abs(move));
         rb.velocity = new Vector2(move, rb.velocity.y);
     }
 

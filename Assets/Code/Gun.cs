@@ -48,7 +48,8 @@ public class Gun : MonoBehaviour
                 break;
         }
 
-        laser.transform.position = gameObject.transform.position;
+        Vector2 target = gameObject.transform.position;
+        laser.transform.position = new Vector2(target.x + 0.5f, target.y + 0.6f );
         Instantiate(laser);
     }
 
