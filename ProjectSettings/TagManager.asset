@@ -8,6 +8,7 @@ TagManager:
   - Water
   - Steam
   - DynamicParticle
+  - Interactive
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - Enemy
   - Laser
   - Player
-  - 
+  - Human
   - Cloud
   - Platform
   - Waterfall

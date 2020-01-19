@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7191490257824255238}
   - component: {fileID: 7191490257824255257}
   - component: {fileID: 7191490257824255234}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Human
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -165,7 +165,7 @@ GameObject:
   - component: {fileID: 7191490257884617940}
   - component: {fileID: 7191490257884617938}
   - component: {fileID: 7191490257884617941}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Steam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
