@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 3891078929063129293}
   - component: {fileID: 3891078929063129288}
   - component: {fileID: 3891078929063129292}
+  - component: {fileID: 8107732622858900684}
+  - component: {fileID: 7152133129759796283}
   m_Layer: 8
   m_Name: Fish
   m_TagString: Untagged
@@ -28,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3891078929063129295}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.7333815, y: -0.59663874, z: 9.797475}
+  m_LocalPosition: {x: 2.7333815, y: 0, z: 9.797475}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3891078929365572030}
@@ -71,8 +73,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 23c3088308414fc4c86e78190a92a9ef, type: 3}
-  m_Color: {r: 0.28773582, g: 0.61425215, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: c6d1aa90313c4b3408892ca6434249f8, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -102,7 +104,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &3891078929063129288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,9 +133,44 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.3646623}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.7106937
+--- !u!95 &8107732622858900684
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3891078929063129295}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 21919101c53363e4a846112b38009e54, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!58 &7152133129759796283
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3891078929063129295}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.1952825, y: -0.61182237}
+  serializedVersion: 2
+  m_Radius: 0.22773314
 --- !u!1 &3891078929365572017
 GameObject:
   m_ObjectHideFlags: 0
@@ -221,7 +258,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3891078930515425755}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.55, y: -0.5, z: 0}
+  m_LocalPosition: {x: 2.51, y: -0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3891078929365572030}

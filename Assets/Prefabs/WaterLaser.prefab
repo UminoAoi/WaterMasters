@@ -24,9 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2673468362836885116}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-
   m_LocalPosition: {x: 2.7275517, y: -0.17400005, z: 0}
-
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3890900594810628384}
@@ -63,7 +61,7 @@ Transform:
   m_GameObject: {fileID: 2673468362873157762}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.002694752}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 2673468362836885117}
   m_RootOrder: 1
@@ -105,8 +103,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 23c3088308414fc4c86e78190a92a9ef, type: 3}
-  m_Color: {r: 1, g: 0.4198113, b: 0.4198113, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 5892efc0f3b99b041b95bc08e764d363, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -143,9 +141,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.0047942996}
+  m_Offset: {x: 1.1101398, y: 0.004794359}
   serializedVersion: 2
-  m_Radius: 0.4952057
+  m_Radius: 0.5599637
 --- !u!50 &822062013565511529
 Rigidbody2D:
   serializedVersion: 4
@@ -194,7 +192,7 @@ Transform:
   m_GameObject: {fileID: 8830352550479841039}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.49999997, y: 0.49999997, z: 1}
+  m_LocalScale: {x: 0.49999997, y: 0.2, z: 1}
   m_Children: []
   m_Father: {fileID: 2673468362836885117}
   m_RootOrder: 0
@@ -237,7 +235,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c691ba84e437dca448971958b322489f, type: 3}
-  m_Color: {r: 0.4764151, g: 0.59095377, b: 1, a: 1}
+  m_Color: {r: 0.41960788, g: 0.68235296, b: 0.83921576, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -259,7 +257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35f62e5a564b9244c899b146d2a89397, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeOfLife: 0.3
+  timeOfLife: 0.5
   laserSpeed: 0.5
   laserLeft: {fileID: 21300000, guid: c691ba84e437dca448971958b322489f, type: 3}
   laserRight: {fileID: 21300000, guid: b85eb05b0f345554f927fd7a00ec6ad2, type: 3}
