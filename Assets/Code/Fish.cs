@@ -22,6 +22,7 @@ public class Fish : MonoBehaviour
     {
         if (Mathf.Abs(transform.position.x - current.position.x) <= 0.2)
         {
+            transform.localScale = new Vector2(-transform.localScale.x, transform.localScale.y);
             Transform tmp = current;
             current = next;
             next = tmp;
@@ -29,5 +30,10 @@ public class Fish : MonoBehaviour
 
         Vector2 target = new Vector2(current.position.x, transform.position.y);
         transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        //////
     }
 }
