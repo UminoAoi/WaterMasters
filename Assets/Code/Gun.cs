@@ -12,6 +12,8 @@ public class Gun : MonoBehaviour
     static WaterState gunMode = WaterState.Frozen;
     public TextMeshProUGUI gunStateText;
 
+    public Animator animator;
+
     void Start()
     {
         gunStateText.text = "Ice";
@@ -46,6 +48,7 @@ public class Gun : MonoBehaviour
                 break;
             case WaterState.Liquid:
                 laser = waterLaser;
+                animator.SetBool("", true);
                 break;
             case WaterState.Steam:
                 laser = steamLaser;
