@@ -52,7 +52,15 @@ public class Player : MonoBehaviour
 
     void Die()
     {
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Debug.Log("wdfefghj");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    IEnumerator DieAfter()
+    {
+        speed = 0;
+        yield return new WaitForSeconds(1);
+        Die();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -72,6 +80,6 @@ public class Player : MonoBehaviour
 
     private void OnBecameInvisible()
     {
-        Die();
+        StartCoroutine(DieAfter());
     }
 }
