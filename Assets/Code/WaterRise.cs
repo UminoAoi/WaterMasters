@@ -19,12 +19,12 @@ public class WaterRise : MonoBehaviour
     void AddWater(float number)
     {
         speed = number;
-        wave.AddWater(number);
+        //wave.AddWater(number);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log("Collide");
-        AddWater(20);
+        //AddWater(20);
     }
 }
