@@ -9,12 +9,12 @@ public class Gun : MonoBehaviour
     public GameObject waterLaser;
     public GameObject steamLaser;
 
-    static WaterState gunMode = WaterState.Frozen;
+    static WaterState gunMode = WaterState.None;
     public TextMeshProUGUI gunStateText;
 
     void Start()
     {
-        gunStateText.text = "Ice";
+        gunStateText.text = "Aby zmienić rodzaj broni wybierz - 1, 2 lub 3 ";
     }
     // Update is called once per frame
     void Update()

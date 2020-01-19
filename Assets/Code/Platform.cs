@@ -37,7 +37,7 @@ public class Platform : MonoBehaviour
         }
         if (state == WaterState.Liquid)
         {
-            animator.SetTrigger();
+            //animator.SetTrigger();
             Vector2 target = new Vector2(transform.position.x, transform.position.y - 5);
             transform.position = Vector2.MoveTowards(transform.position, target, fallingSpeed * Time.deltaTime);
 

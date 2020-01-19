@@ -612,7 +612,7 @@ MonoBehaviour:
   image: {fileID: 282525741}
   text: {fileID: 2822289309618452340}
   nextSprite: {fileID: 21300000, guid: 58be68b21a3713f4484e90406ff77446, type: 3}
-  next: KINGA scene
+  next: LEVEL
 --- !u!114 &2822289311223141220
 MonoBehaviour:
   m_ObjectHideFlags: 0
