@@ -271,7 +271,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2199947007268713134}
   - component: {fileID: 3681330943765739684}
-  m_Layer: 17
+  m_Layer: 16
   m_Name: ice
   m_TagString: Untagged
   m_Icon: {fileID: 0}

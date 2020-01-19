@@ -18,7 +18,7 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         gun = GetComponent<Gun>();
     }
-    
+
     void Update()
     {
         if (Input.GetKeyDown("r"))
@@ -80,6 +80,25 @@ public class Player : MonoBehaviour
 
     private void OnBecameInvisible()
     {
-        StartCoroutine(DieAfter());
+        //StartCoroutine(DieAfter());
+    }
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.gameObject.layer == 17)
+        {
+            Rain rain = collider.gameObject.gameObject.GetComponent<IceRange>().parent;
+            if (rain.state == WaterState.Frozen)
+                Die();
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collider)
+    {
+        if (collider.gameObject.layer == 17)
+        {
+            Rain rain = (collider.gameObject.GetComponent<IceRange>()).parent;
+            if(rain.state==WaterState.Frozen)
+                Die();
+        }
     }
 }

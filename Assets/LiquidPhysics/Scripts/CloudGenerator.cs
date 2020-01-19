@@ -42,8 +42,15 @@ public class CloudGenerator : MonoBehaviour
             particleScript.SetLifeTime(PARTICLE_LIFETIME); //Set each particle lifetime
             particleScript.SetState(particlesState); //Set the particle State
             newParticle.transform.position = transform.position;// Relocate to the spawner position
-
-            Vector3 cloudRange = new Vector3(Random.Range(-2f, 2f), 0, 0);
+            Vector3 cloudRange;
+            if (rain.state == WaterState.Frozen)
+            {
+                cloudRange = new Vector3(Random.Range(-2f, 2f), 1.0f, 0);
+            }
+            else
+            {
+                cloudRange = new Vector3(Random.Range(-2f, 2f), 0, 0);
+            }
             newParticle.transform.Translate(cloudRange);
 
             newParticle.transform.parent = particlesParent;// Add the particle to the parent container			

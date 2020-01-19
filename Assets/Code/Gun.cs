@@ -12,6 +12,10 @@ public class Gun : MonoBehaviour
     static WaterState gunMode = WaterState.Frozen;
     public TextMeshProUGUI gunStateText;
 
+    void Start()
+    {
+        gunStateText.text = "Ice";
+    }
     // Update is called once per frame
     void Update()
     {

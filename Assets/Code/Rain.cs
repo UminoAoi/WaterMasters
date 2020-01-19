@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class Rain : MonoBehaviour
 {
-    public WaterState state;
+    public WaterState state = WaterState.None;
 
     // Start is called before the first frame update
     void Start()
     {
-        state = WaterState.Liquid;
+        if (state == WaterState.None)
+            state = WaterState.Liquid;
     }
 
     // Update is called once per frame
